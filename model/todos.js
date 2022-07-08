@@ -9,6 +9,10 @@ const Todo = new mongoose.Schema(
       trim: true,
       maxlength: 30,
     },
+    completed: {
+      type: Boolean,
+      default: false
+    }
   },
   { timestamps: true }
 );

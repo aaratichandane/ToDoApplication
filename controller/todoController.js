@@ -43,7 +43,10 @@ exports.createTodo = (req, res) => {
 
 exports.updateTodo = (req, res) => {
   const todo = req.todo;
-  todo.task = req.body.task;
+  if(req.body.task)
+    todo.task = req.body.task;
+   if(req.body.completed)
+    todo.completed = req.body.completed;
 
   todo.save((err, t) => {
     if (err || !t) {
