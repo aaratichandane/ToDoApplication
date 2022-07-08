@@ -1,0 +1,25 @@
+{
+  "name": "todoapplication",
+  "version": "1.0.0",
+  "description": "ToDo Application with NodeJS, MongoDB, Express and JWT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaratichandane/ToDoApplication.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaratichandane/ToDoApplication/issues"
+  },
+  "homepage": "https://github.com/aaratichandane/ToDoApplication#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.3"
+  }
+}
