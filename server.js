@@ -18,6 +18,10 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
+app.get('/',(req, res)=>{
+    res.send('Welcome to ToDo Application')
+})
+
 app.use("/api",auth, api);
 app.use("/auth", authController);
 
