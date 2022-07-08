@@ -1,0 +1,132 @@
+{
+	"variables": [],
+	"info": {
+		"name": "TODO_Assessment",
+		"_postman_id": "ab02f0ad-7aba-f738-e73e-ed239889d964",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Todos",
+			"request": {
+				"url": "http://localhost:4000/api/todos",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJjODJjM2U1YzhmYzNkOTU2ODMwMjU0IiwiZW1haWwiOiJhcnRpY2hhbmFkbmVAZ21haWwuY29tIiwiaWF0IjoxNjU3Mjk3NTkyLCJleHAiOjE2NTczMDQ3OTJ9.aY28NQMRlc8CBBSfBWQsYFVHy5WmvjvbTd5_25-7k3E",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Todo By Id",
+			"request": {
+				"url": "http://localhost:4000/api/todo/62c8506ea75a98192c1d39e0/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJjODJjM2U1YzhmYzNkOTU2ODMwMjU0IiwiZW1haWwiOiJhcnRpY2hhbmFkbmVAZ21haWwuY29tIiwiaWF0IjoxNjU3Mjk3NTkyLCJleHAiOjE2NTczMDQ3OTJ9.aY28NQMRlc8CBBSfBWQsYFVHy5WmvjvbTd5_25-7k3E",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Auth Token",
+			"request": {
+				"url": "http://localhost:4000/auth/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"artichanadne@gmail.com\",\n\t\"password\":\"test\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create Todo",
+			"request": {
+				"url": "http://localhost:4000/api/todo/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJjODJjM2U1YzhmYzNkOTU2ODMwMjU0IiwiZW1haWwiOiJhcnRpY2hhbmFkbmVAZ21haWwuY29tIiwiaWF0IjoxNjU3Mjk3NTkyLCJleHAiOjE2NTczMDQ3OTJ9.aY28NQMRlc8CBBSfBWQsYFVHy5WmvjvbTd5_25-7k3E",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"task\":\"Send Mail\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Todo ",
+			"request": {
+				"url": "http://localhost:4000/api/todo/62c85ae0b88c78e65d3ad563/update",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJjODJjM2U1YzhmYzNkOTU2ODMwMjU0IiwiZW1haWwiOiJhcnRpY2hhbmFkbmVAZ21haWwuY29tIiwiaWF0IjoxNjU3Mjk3NTkyLCJleHAiOjE2NTczMDQ3OTJ9.aY28NQMRlc8CBBSfBWQsYFVHy5WmvjvbTd5_25-7k3E",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"completed\":true\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Todo",
+			"request": {
+				"url": "http://localhost:4000/api/todo/62c85ae0b88c78e65d3ad563/delete",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJjODJjM2U1YzhmYzNkOTU2ODMwMjU0IiwiZW1haWwiOiJhcnRpY2hhbmFkbmVAZ21haWwuY29tIiwiaWF0IjoxNjU3Mjk3NTkyLCJleHAiOjE2NTczMDQ3OTJ9.aY28NQMRlc8CBBSfBWQsYFVHy5WmvjvbTd5_25-7k3E",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
