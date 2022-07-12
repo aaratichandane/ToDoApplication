@@ -43,7 +43,7 @@ cd ToDoApplication
     * Run command **npm i**
     * npm start
 
-## Impost Postman
+## Import Postman
 
     * Open your Postman Application or extension
     * Click on import option given on the navigation bar on Postman
