@@ -57,7 +57,7 @@ cd ToDoApplication
         * Sample token: "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJjODYzYWRmNzQ4YTQxMGM0ODI0Y2IwIiwiZW1haWwiOiJhcnRpY2hhbmRhbmVAeWFob28uY29tIiwiaWF0IjoxNjU3Mjk5ODg1LCJleHAiOjE2NTczMDcwODV9.BB3YnP8lJfRCQBpubrnjKdliicMGrXtoB9K80_gy9pQ"
     * Pass this token as **x-access-token** in the Header of your each Todo request in the postman
     
-    Now you can user all the endpoints with the **TOKEN**.
+    Now you can use all the endpoints with the **TOKEN**.
 
 
 
